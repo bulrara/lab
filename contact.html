@@ -1,0 +1,123 @@
+<HTML>
+	<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<TITLE>Контакты</TITLE>
+	<style>
+	
+	body{
+	background: #E0FFFF;
+	max-width: 1024px;
+	margin: 10px auto;
+	padding: 30px;
+	}
+	
+	.header{
+	width:  1024px;
+	height: 170px;
+	background-color: #1E90FF; 
+	margin-bottom: 2px;
+	background-image: url(img/head2.jpg)
+	}
+	
+	#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #E0FFFF; /* Цвет фона */
+    color: #4C4C4C; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+	}
+	
+	h1{
+	color: #4C4C4C;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #4C4C4C;
+	}
+	
+	h2{
+	color: #000000;
+	font-size: 40px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	}
+	
+	a{
+	font-size: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	}
+	
+	
+	</style>
+	<script>
+	function sendMessage(f) {
+		if (confirm("Подтвердите оправку сообщения!")) 
+		f.submit();
+		}
+	</script>
+	</HEAD>
+	
+	
+<BODY>
+	<header>
+	<div class="header">
+		<h2 align="center">Рекламный сайт</h2>
+		<p align="center">
+		<A HREF="main.html">О нас |</A>
+		<A HREF="pic.html">Галерея |</A>
+		<A HREF="table.html">Цены |</A>
+		<A HREF="contact.html">Контакты |</A>
+		<A HREF="index.html">На титульный лист</A>
+		</p>
+	</div>
+	</header>
+	
+	<h1>Контакты</h1>
+	
+	<p>Санкт-Петербург, ул. Ленина, д.61</p>
+	<p>тел. 7543232, +7005431341</p>
+	<p>Режим работы: с 10 до 20 часов</p>
+	<p>Cо вторника по воскресенье</p>
+	<p>Понедельник - <b><i>выходной</b></i></p>
+
+	<h1>Обратная связь</h1>
+	<ul>
+	<li>
+	<p>Вы можете задать вопрос на форуме, либо написать нам на почту</p>
+	</li>
+	</ul>
+		<form onsubmit="sendMessage(this);return false;">
+		<table width="100%" cellspacing="0" cellpadding="4">
+		<tr> 
+		<td align="right" width="100">Имя:</td>
+		<td><input type="text" name="nickname" maxlength="50" size="20"></td>
+		</tr>
+		<tr> 
+		<td align="right">E-mail:</td>
+		<td><input type="text" name="email" maxlength="50" size="20"></td>
+		</tr>
+		<tr> 
+		<td align="right" valign="top">Сообщение:</td>
+		<td><textarea name="text" cols="35" rows="10"></textarea></td>
+		</tr>
+		<tr> 
+		<td></td>
+		<td><input type="submit" value="Отправить сообщение"></td>
+		</tr>
+		</table>
+		</form>
+
+		<ul>
+		<li>
+		<p><a style="color: #ff0000; font-size: 16px" href="mailto:vopros@mysite.ru">Задать вопрос по электронной почте</a></p> 
+		</li>
+		</ul>
+  
+	<div id="footer">
+	<p align="center">Лабораторная работа №7 "Создание WEB страницы", 2022 год, Булатов Р.Р.</p>
+	</div>
+  </BODY>
+</HTML>
